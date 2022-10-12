@@ -41,5 +41,14 @@ public class Main {
         //byte myNewByteValue = (myByteMinValue / 2); ->error
         byte myNewByteValue = (byte) (myByteMinValue / 2); //casting
         //java uses int most of the time
+
+        //primitive type challenge
+        byte b = 23;
+        short s = 100;
+        int n = 18;
+        long l = 50000 + (b + s + n) * 10; //no error here or no casting needed here because long accepts integer values
+        System.out.println(l);
+        short st = (short) (100 + (b + s + n) * 10);
+     System.out.println(st);
     }
 }
