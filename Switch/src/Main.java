@@ -2,7 +2,6 @@ public class Main {
     public static void main(String[] args) {
        int switchValue = 5;
        //break statement is important
-        //switch statements can be used with byte, char, int, short
        switch (switchValue){
            case 1:
                System.out.println("Value was 1");
