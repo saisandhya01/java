@@ -5,7 +5,7 @@ public class Account {
 
     public Account(){
         this("423842", 2434, "678");
-        //constructor called inside a constructor. But this has to be in first line - important
+        //constructor called inside a constructor. But this has t
         System.out.println("Empty constructor called");
     }
     public Account(String account_number, double balance, String number){
