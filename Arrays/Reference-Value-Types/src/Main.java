@@ -25,5 +25,15 @@ public class Main {
 
         System.out.println(Arrays.toString(myIntArray));
         System.out.println(Arrays.toString(anotherArray));
+
+        modifyArray(myIntArray); //pass the reference type
+
+        System.out.println("after modifying:");
+
+        System.out.println(Arrays.toString(myIntArray));
+        System.out.println(Arrays.toString(anotherArray));
+    }
+    private static void modifyArray(int[] array){
+        array[0] = 2;
     }
 }
