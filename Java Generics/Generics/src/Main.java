@@ -4,10 +4,19 @@ public class Main {
         BaseBallPlayer tim = new BaseBallPlayer("Tim");
         SoccerPlayer messi = new SoccerPlayer("Messi");
 
-        Team CSG = new Team("CSG");
+        Team<FootBallPlayer> CSG = new Team<>("CSG");
         CSG.addPlayer(joe);
-        CSG.addPlayer(tim);
-        CSG.addPlayer(messi);
+        //CSG.addPlayer(tim);
+        //CSG.addPlayer(messi);
+
+        Team<BaseBallPlayer> baseBallPlayerTeam = new Team<>("Chicago cubs");
+        baseBallPlayerTeam.addPlayer(tim);
+
+        //Team<String> stringTeam = new Team<>("this should not work");
+        //stringTeam.addPlayer("no-one");
+
+        Team<SoccerPlayer> soccerTeam = new Team<>("argentina club");
+        soccerTeam.addPlayer(messi);
 
         System.out.println(CSG.numPlayers());
     }
